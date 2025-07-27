@@ -13,16 +13,6 @@ from firebase_admin import credentials, firestore
 app = Flask(__name__)
 CORS(app)  # Enable CORS for cross-origin requests
 
-# Firebase Configuration
-# FIREBASE_CONFIG = {
-#     "apiKey": "AIzaSyC7MDxa3Zaf6E1Ea-4aHzv-p23NYWEbjYQ",
-#     "authDomain": "ranexis-a43d8.firebaseapp.com",
-#     "projectId": "ranexis-a43d8",
-#     "storageBucket": "ranexis-a43d8.firebasestorage.app",
-#     "messagingSenderId": "856967305477",
-#     "appId": "1:856967305477:web:1bf7b8703d2d156cc3ff6c"
-# }
-
 # Initialize Firebase Admin SDK - FIXED VERSION (same as app.py)
 try:
     if not firebase_admin._apps:
